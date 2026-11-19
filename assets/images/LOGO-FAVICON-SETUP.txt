@@ -1,0 +1,7 @@
+BLIXTOYS LOGO / FAVICON PLACEHOLDERS
+
+Add your files using these exact paths:
+- assets/images/brand-logo.png
+- assets/images/favicon.ico
+
+All 8 HTML pages reference both paths. No image files are included yet.

@@ -110,3 +110,51 @@ Replace each `src` in `products.html` with your final image URL or local asset p
 
 ## Brand strip presentation
 The homepage brand marquee now displays the logo image files directly without individual dark background cards, borders, rounded containers, or shadows. Replace the images under `assets/images/brands/` to update the logos.
+
+
+## Homepage product showcase
+The full 10-category product carousel has been moved from `products.html` into the homepage as the `#products-showcase` section, replacing the previous three-card "What We Make" teaser. The standalone `products.html` page has been removed. Site navigation and footer links labelled Products now point to `index.html#products-showcase`. The homepage loads `assets/js/products-carousel.js` for the carousel controls.
+
+
+## Generated product category imagery
+The homepage product showcase now uses original generated product imagery inspired by the product types and merchandising context visible on Baybee's public catalogue. No Baybee logo, brand marks, product photographs, product names, or exact product designs have been copied. Each generated tile is stored locally under `assets/images/product-categories/`.
+
+| File | Category visual |
+|---|---|
+| `category-01.webp` | Infant play gym / activity toy |
+| `category-02.webp` | Activity walker |
+| `category-03.webp` | High chair |
+| `category-04.webp` | Potty training chair |
+| `category-05.webp` | Ride-on push car |
+| `category-06.webp` | Kick scooter |
+| `category-07.webp` | Electric kids' bike |
+| `category-08.webp` | Electric jeep |
+| `category-09.webp` | Electric toy car |
+| `category-10.webp` | Indoor / outdoor play set |
+
+The homepage category cards reference these local assets, so the showcase no longer depends on remote image URLs. Replace the files in this folder to update the imagery without editing the HTML.
+Reference catalogue: https://baybee.co.in/
+
+
+## Product image ratio adjustment
+Category images now explicitly use `object-fit: cover` and centered positioning at all viewport sizes. This preserves the original image proportions (no stretching) while filling the card's image area; excess edges are cropped to match the card shape. Replace the local WebP files with source images of a similar aspect ratio for the closest visual match.
+
+
+## Wide product showcase imagery
+The Ride-On Toys, Kick Scooters, and Indoor & Outdoor Play images are prepared for a 16:9 landscape presentation (1600 × 900). The category cards now use `object-fit: contain` so the complete product remains visible rather than being clipped by a cover crop. The remaining category image files are retained and displayed with the same fit behavior.
+
+
+## Landscape product category assets
+All 10 category images are now normalized to 1600 × 900 (16:9 landscape). Categories 1–4 use newly generated studio product photography; categories 7–9 use the existing full product image centered on a softly extended landscape backdrop to avoid cutting off the product. The cards use `object-fit: cover` against these normalized landscape assets.
+
+
+## Complete product image regeneration — final pass
+All ten category images are present as 1600 × 900 (16:9) WebP files in `assets/images/product-categories/`. Categories 05–10 have been regenerated from a new product-category visual set: Ride-On Toys, Kick Scooters, Electric Bikes, Electric Jeeps, Electric Cars, and Indoor & Outdoor Play. The product subjects are kept fully visible on a wide studio canvas, with the existing card text area left visually quieter.
+
+
+## Empty capability image placeholders
+Removed the unused abstract image placeholder blocks from the three homepage capability cards (Design & Development, Manufacturing, Quality & Compliance). No empty image boxes remain in these cards. Card titles, descriptions, labels, card layout, and responsive grid are preserved.
+
+
+## Company and Manufacturing page visual cleanup
+Removed the unused abstract image/banner containers from `about.html` (Company) and `manufacturing.html` (Manufacturing). The page hero headings and descriptions remain, with no empty image area.

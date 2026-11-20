@@ -6500,3 +6500,75 @@ body>footer {
     height: 78px;
   }
 }
+
+
+/* Product category artwork: preserve its natural proportions while fitting
+   the responsive card image area without stretching. */
+.products-showcase .products-slide.category-image-card {
+  overflow: hidden !important;
+}
+.products-showcase .category-image-card .category-card-image {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  aspect-ratio: auto !important;
+  transform: none !important;
+}
+
+
+/* Wide 16:9 category artwork: show the complete product instead of cropping it. */
+.products-showcase .products-slide.category-image-card {
+  aspect-ratio: 16 / 9 !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+.products-showcase .category-image-card .category-card-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #17120f !important;
+}
+@media (max-width: 700px) {
+  .products-showcase .products-slide.category-image-card {
+    aspect-ratio: 16 / 9 !important;
+    min-height: 0 !important;
+  }
+}
+
+
+/* All category assets are normalized to 1600x900 landscape images. */
+.products-showcase .products-slide.category-image-card {
+  aspect-ratio: 16 / 9 !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+.products-showcase .category-image-card .category-card-image {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  background: #17120f !important;
+}
+
+
+/* Final category artwork pass: all ten assets are landscape 16:9 images. */
+.products-showcase .products-slide.category-image-card {
+  aspect-ratio: 16 / 9 !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+.products-showcase .category-image-card .category-card-image {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}

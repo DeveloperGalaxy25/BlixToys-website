@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="140" viewBox="0 0 360 140">
+  <rect width="360" height="140" rx="8" fill="#171310"/>
+  <rect x="1" y="1" width="358" height="138" rx="7" fill="none" stroke="#8b654d" stroke-opacity=".5"/>
+  <path d="M28 92 C55 26 92 26 120 92 S185 158 215 74 S278 18 330 58" fill="none" stroke="#d98235" stroke-opacity=".7" stroke-width="2"/>
+  <text x="180" y="69" text-anchor="middle" fill="#f0e9e2" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3">BRAND 06</text>
+  <text x="180" y="94" text-anchor="middle" fill="#a99b90" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">REPLACE WITH LOGO</text>
+</svg>

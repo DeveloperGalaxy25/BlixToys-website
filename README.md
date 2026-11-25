@@ -158,3 +158,15 @@ Removed the unused abstract image placeholder blocks from the three homepage cap
 
 ## Company and Manufacturing page visual cleanup
 Removed the unused abstract image/banner containers from `about.html` (Company) and `manufacturing.html` (Manufacturing). The page hero headings and descriptions remain, with no empty image area.
+
+
+## Full website content integration
+The supplied company information has been rewritten into customer-facing website copy and integrated into:
+- `index.html`: brand introduction, vision, mission, product families, manufacturing footprint, quality approach and partnership messaging.
+- `manufacturing.html`: process, equipment, production capabilities, product breadth and operating scale.
+- `capabilities.html`: concept development, design, engineering, refinement and manufacturing support.
+- `contact.html`: clearer project enquiry messaging and available email contacts.
+
+The former Company/About page and standalone Products page are not included. Company story and product category showcase content are integrated into the homepage, consistent with the site's requested structure.
+
+Contact phone and street address were omitted because the source document contains placeholder/incomplete values. Certification specifics remain subject to valid certificate/licence documentation and are not expanded beyond verifiable site content.

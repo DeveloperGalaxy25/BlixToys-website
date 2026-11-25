@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       company: String(formData.get("company") || "").trim(),
       email: String(formData.get("email") || "").trim(),
       phone: String(formData.get("phone") || "").trim(),
+      project: String(formData.get("project") || "").trim(),
       quantity: String(formData.get("quantity") || "").trim(),
       message: String(formData.get("message") || "").trim(),
       consent: Boolean(consentField && consentField.checked),
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Spam honeypot: silently stop automated submissions.
     if (payload.website) return;
 
-    if (!payload.name || !payload.email || !payload.message) {
+    if (!payload.name || !payload.email || !payload.project || !payload.message) {
       showMessage("Please complete all required fields.", "error");
       return;
     }
